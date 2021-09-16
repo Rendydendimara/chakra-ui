@@ -17,6 +17,65 @@ To better understand the changelog, here are some legends we use:
 
 <!-- CHANGELOG:INSERT -->
 
+## 16-09-2021
+
+**Theme Tools** `v1.2.1`
+
+- Replace `tinycolor2` with `@ctrl/tinycolor` to get better tree-shaking benefits
+
+**Theme** `v1.10.2`
+
+- Replace `tinycolor2` with `@ctrl/tinycolor` to get better tree-shaking benefits
+
+**Checkbox** `v1.5.7`
+
+- Add state `data-*` attributes to the checkbox `container` to allow user style
+  the `_checked`, `_invalid` and `_disabled` states
+
+**Image** `v1.0.20`
+
+- Fix issue where onload doesn't get called when using srcset
+- If the user doesn't provide a `fallbackSrc` or a `fallback` `ignoreFallback` is
+  applied by default
+
+**Anatomy** `v1.0.1`
+
+- Add missing breadcrumb part
+- Add container part to checkbox
+
+**Avatar** `v1.2.10`
+
+- Fix issue where avatar blinks during API call due to its fallback logic. You can
+  disable the fallback logic by setting `ignoreFallback`, just like you can with
+  the `Image` component
+
+**Provider** `v1.6.8`
+
+- Resolve dependency issues caused by previous release
+- Add `ChakraProviderProps` type what was removed in previous release
+
+**Modal** `v1.8.12`
+
+- Drawer: omit the `motionPreset` prop type since `Drawer` only implements the
+  `Slide` transition, unlike `Modal` that allows you switch its motion preset.
+
+**Menu** `v1.7.4`
+
+- Fix issue where keyboard navigation doesn't work when `MenuButton` isn't
+  rendered. This is useful in scenarios where you want the menu to be triggered by
+  a command or right-click.
+
+**Button** `v1.4.3`
+
+- Fix issue where composing `Button` with framer-motion's `motion` factory breaks
+  animation/transition
+
+**Select** `v1.1.15`
+
+- The disabled state of the `SelectIcon` can be reflected by a disabled
+  `FormControl` or by the `isDisabled`-flag of the `select` field
+
+
 ## 29-08-2021
 
 `@chakra-ui/react@1.6.7`
